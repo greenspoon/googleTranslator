@@ -52,7 +52,15 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "egal"
+            argument = "de"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "en"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "&apos;Heute scheint die Sonne.&apos;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

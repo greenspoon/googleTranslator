@@ -21,6 +21,11 @@ func parseAnswer(_ array: [Any]) -> String {
 	return answer
 }
 
+guard CommandLine.arguments.count >= 4 else {
+	print("you are missing a \"fromLanguage\" or a \"toLanguage\". \n Example: googleTranslate de en heute")
+	exit(0)
+}
+
 let fromLanguage = CommandLine.arguments[1]
 let toLanguague = CommandLine.arguments[2]
 
