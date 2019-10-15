@@ -21,10 +21,10 @@ func parseAnswer(_ array: [Any]) -> String {
 	return answer
 }
 
-let fromLanguage = "de"
-let toLanguague = "en"
+let fromLanguage = CommandLine.arguments[1]
+let toLanguague = CommandLine.arguments[2]
 
-let question = CommandLine.arguments[1]
+let question = CommandLine.arguments[3]
 
 var urlString = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=\(fromLanguage)&tl=\(toLanguague)&dt=t&q=\(question)"
 
@@ -46,7 +46,6 @@ URLSession.shared.dataTask(with: url) { (data, response, error) in
 	print(parseAnswer(array))
 	dispatchGroup.leave()
 }.resume()
-
 
 dispatchGroup.wait()
 
