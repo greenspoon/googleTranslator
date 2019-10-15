@@ -3,7 +3,7 @@ Swift Command Line Tool to use the google translate api to translate words or se
 
 You can type 
 <br>
-```googleTranslator de en egal```
+```./googleTranslator de en egal```
 
 and you will get "no matter".
 <br>
@@ -13,7 +13,7 @@ The second argument is where you want to translate to.<br>
 The third argument is the word or sentence that you want to translate.
 <br> <br>
 If you want to translate a sentence you have to put it in single quotes like: <br>
-```googleTranslate en de 'Today the sun is shining.'```
+```./googleTranslate en de 'Today the sun is shining.'```
 
 
 
